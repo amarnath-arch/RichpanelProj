@@ -10,7 +10,6 @@ function App() {
   const registerProps = useSpring({
     left: registrationFormStatus ? 0 : 500,
   });
-
   const loginBtnProps = useSpring({
     borderBottom: registrationFormStatus 
       ? "solid 0px transparent"
@@ -21,14 +20,12 @@ function App() {
       ? "solid 2px #1059FF"
       : "solid 0px transparent",
   });
-
   function registerClicked() {
     setRegistartionFormStatus(true);
   }
   function loginClicked() {
     setRegistartionFormStatus(false);
   }
-  
   function LoginForm() {
     return (
       <React.Fragment>
@@ -40,7 +37,6 @@ function App() {
       </React.Fragment>
     );
   }
-
   function RegisterForm() {
     return (
       <React.Fragment>
